@@ -38,8 +38,8 @@ const student_morning = new Student("kartyyyy", "comp3123", "eggs");
 
 console.log(student_morning);
 console.log(student_morning.prop1);
-console.log(student_morning.method1.prop2);
-student_morning.method1(student_morning.lunch);
+console.log(student_morning.prop2);
+student_morning.method1(student_morning.prop3);
 
 
 // optional Homework: Instantiate another student objeect and print its value
