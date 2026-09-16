@@ -39,10 +39,10 @@
  }
 
 
+  // -------------------- WEB developer side -----------------------------
  fetch_weather();
 
  let userName = "bob";
  console.log(userName);
 
 
-  // -------------------- API developer side -----------------------------
