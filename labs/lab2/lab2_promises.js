@@ -13,15 +13,15 @@
   async function fetch_weather(){
      const promise_weather = new Promise((resolve, reject) => {
 
-        let isPaidMember = false;
+        let isPaidMember = true;
         if(isPaidMember){
 
 
             setTimeout(() => {
-            const weatherJSON  ={Monday: "sunny", Tuesday: "rainy"};
+            const weatherJSON  = {Monday: "sunny", Tuesday: "rainy"};
             let weatherJSONstr = JSON.stringify(weatherJSON);
             
-            resolve(weatherJSONstr)  
+            resolve(`success!!!!${weatherJSONstr}`); 
             // resolve('{"Monday": "sunny", "Tuesday": "rainy"}');
             }, 2000);
            
