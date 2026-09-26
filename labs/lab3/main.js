@@ -6,8 +6,6 @@ create multiple server paths to access
 
 */
 
-const users = require('./data.js');
-
 let http = require("http");
 let fs = require("fs");
 let users = require("./data.js");
@@ -16,7 +14,7 @@ const port = 8088;
 
 // create the server and the multiple paths below 
 
-http.createServer((request, response) =>{
+const server = http.createServer((request, response) =>{
 
     if(request.url == "/"){
         response.write("<h1> Node.js Web Server at the root </h1>");
@@ -27,6 +25,7 @@ http.createServer((request, response) =>{
      if(request.url == "/users"){
         // convert from JSON obj to JSON string 
         let data = JSON.stringify(users);
+        // must use the file as the namespace object  and then go deeper into it by using dot operator and access the object  from that name space.
         response.write(data);
         response.end()
      }
@@ -50,5 +49,5 @@ http.createServer((request, response) =>{
 });
 
 
-Server.listen(PORT)
-console.log("Server started at port number : {PORT}");
+server.listen(port);
+console.log(`Server started at port number : ${port}`);

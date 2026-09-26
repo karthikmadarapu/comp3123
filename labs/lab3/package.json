@@ -4,10 +4,10 @@
     "description": "sample node.js server with some events",
     "main" : "main.js",
     "scripts": {
-        "start" : "nodemon ./main.js localhost 8088" 
+        "start" : "nodemon ./main.js" 
     },
 
-    "keyword" : [
+    "keywords" : [
         "node.js",
         "webserver",
         "http", 
@@ -15,10 +15,10 @@
     ],
 
     "author" : "Karthik Madarapu", 
-    "License" : "ISC", 
+    "license" : "ISC", 
     
-    "Dependencies": {
-       "Nodemon" : "^2.0.12"
+    "devDependencies": {
+       "nodemon" : "^3.1.0"
     }
 
 
