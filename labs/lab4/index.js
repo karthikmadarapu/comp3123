@@ -43,6 +43,25 @@ app.get("/hello", (request, response) =>{
 })
 
 
+app.get("/user/:firstname/:lastname", (request, response) =>{
+
+    console.log(request.params);
+      if(!request.params.firstname && !request.params.lastname){
+        return response.status(400).json({error:"Missing path parameters"});
+    }
+     const firstname = request.params.firstname;
+    const lastname = request.params.lastname;
+    
+
+    response.json({
+        first_name: firstname, 
+        last_name: lastname
+      
+    });
+
+
+});
+
 app.get("/college", (request, response) =>{   
     const college = {
 
@@ -78,11 +97,12 @@ app.post("/college", (request, response) =>{
 
       const college = {
 
-        method: "PUT",   // It's not built in we created it.
+        method: "POST",   // It's not built in we created it.
         name: "George Brown College",
         location: "Toronto",
         established: 1967
     }
+    response.json(college);
     
 })
 
@@ -102,7 +122,7 @@ app.put("/college", (request, response) =>{
 app.delete("/college", (request, response) =>{   
     const college = {
 
-        method: "PUT",   // It's not built in we created it.
+        method: "DELETE",   // It's not built in we created it.
         name: "George Brown College",
         location: "Toronto",
         established: 1967
