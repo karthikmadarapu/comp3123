@@ -12,7 +12,7 @@ const router = express.Router();
 let writeData = (data) =>{
     data +="\r\n"
     fs.appendFile("server_log.txt", data, function(error){
-        if(error) throw error
+        if(error) throw error 
 
         console.log("Log Saved");
     });
@@ -36,9 +36,13 @@ let booksLogger = (request, response, next)=>{
     console.log("Books logger was called");
     next();
 }
-
+// sub routes 
 app.use(booksLogger);
-// app.use("/book");
-
+app.use("/books/computers", computers);
+app.use("/books",booksLogger, books);
+// Root Route Endpoint
+app.get("/", (request, response) => {
+    response.send("You have successfully reached the root directory (/)!");
+}); 
 app.listen(process.env.port || 8081);
 console.log("Web server is listening at this port: ",(process.env.port || 8081) );
