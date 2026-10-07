@@ -52,7 +52,7 @@ Student.prototype.method2 = function (param1){
 }
 
 console.log(student_morning.prop4);
-console.log(student_morning.method2());
+console.log(student_morning.method2("maximus"));
 
 // class 
 class Prof{
