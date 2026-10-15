@@ -1,0 +1,113 @@
+TOPICS - REVIEW - WEEK2
+- Arrow Functions
+- Classes/Subclasses
+- Callbacks
+- Promises
+- Async/await
+
+
+
+==============ARROW FUNCTIONS ======================
+
+- Arrow functions are methods which are short and be created through any variable which is really effortless
+- Arrow functions are not constructors and they cannot contain super , this and they cannot take any kind of arguments but yes they can have  parameters.
+
+
+This is a basic  example or instance of an arrow function 
+
+const mynum = (param) =>{
+
+}
+- we don't have to return inside the curly braces 
+- Arrow functions cannot be able to use the prototype property 
+
+
+=================CLASSES AND SUBCLASSES ===============================
+- Classes are the blueprint for the objects where objects are the main construction 
+- Classes can have child properties which are also called subclasses.
+- Subclasses use extends keyword to inherit the parent properties.
+- We can use the super keyword to use the constructor of the parent property.
+
+
+Class is like function / Methods but not exactly them 
+- They can be used as class declaration and class expression 
+
+class declaration is a normal way to write a function 
+
+class Animal {
+    constructor(Breed, Name, color){
+        this.Breed = Breed;
+        this.Name = Name;
+        this.color = color ;
+    }
+
+}
+
+
+- Let's say we can use 
+  two types in fucntion expression 
+
+- Named expression 
+
+let rectangle = class Rectangle {
+    constructor(height, width){
+        this.height = height ;
+        this.width = width;
+    }
+}
+
+console.log(rectangle.name);//outputs Rectangle.
+
+
+
+- UNNAMED expression 
+
+let rectangle = class  {
+    constructor(height, width){
+        this.height = height ;
+        this.width = width;
+    }
+}
+console.log(rectangle.name);//outputs rectangle.
+
+
+================ CALLBACKS ===============
+- What's the difference between single and multi-threaded
+- JS is a single threaded running language while other programming languages like .net or java are heavily multi-threaded.
+- single threaded means it can only run certain tasks one at a time 
+- multi threaded means it can work while doing multiple tasks.
+
+=== A function passed inside an another function is called callback function===
+
+
+ const callback = function(){
+    console.log("this function is used ");
+}
+
+setTimeout(callback, 3000);
+//this above function is called after 3 seconds
+and  setTimeout is also a function where we declared our callback function inside it.
+
+- We can use anonymous function as a callback too.
+
+===============PROMISES=======================
+
+- Promise is an eventual completion or failure  of an asynchronous operation 
+- Promises have states where we can judge them by knowing their current state (pending , fulfilled, rejected, settled).
+- We can chain promises by using then catch block which represent the current state of the promise.
+- var.then(for success)
+- var.catch(for failure)
+
+
+
+======================== ASYNC / AWAIT ==================
+- Async and Await are modern day Syntatical sugar for promises
+- Async and Await has it's own methodology behind it .
+- When Async gets called it calls the function and checks whether it has any asynchronous tasks, if ih has any it executes them and throws these synchronous tasks in event queue and after the 3 second period it executes but by that timeframe of 3 second it executes all the asynchronous tasks.
+-it's really beneficial because it's not stopping for an Async function.
+
+
+
+
+
+
