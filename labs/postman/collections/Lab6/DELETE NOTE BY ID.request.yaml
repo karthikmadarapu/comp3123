@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost8081/notes/id
+method: DELETE
+order: 5000

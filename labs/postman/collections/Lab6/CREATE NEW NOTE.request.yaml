@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost8081/notes
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\"        : \"Walking Bruno\",\r
+
+    \    \"description\"  : \"Walk my dog bruno every eve 6pm\",\r
+
+    \    \"priority\"     : \"MEDIUM\"\r
+
+    }"
+order: 3000
