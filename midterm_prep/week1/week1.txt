@@ -1,0 +1,70 @@
+Topics to review 
+
+-Review of JS enhanced object literals 
+- JS and ES6 features
+- INTRO to full and MERN stack 
+
+
+
+
+
+=========== ADVANTAGES OF FULLSTACK DEV==============
+-Cost saving 
+- making or building very fast prototypes 
+- less churn rate in team communication 
+- can understand the wide variety of development fields
+
+
+============ DISADVANTAGES OF FULLSTACK  DEV ================
+
+- if choosing fullstack need to understand if it matches all the ratios with the project purposes
+- working with fullstack can be heavily dependent on personal fullstack knowledge 
+- highly technical and complicated if not used properly 
+
+
+
+
+
+
+MERN STACK (MONGO:EXPRESS:REACT:NODE) 
+- To understand and work with mern u just need to know two specific things that are JAVASCRIPT and JSON 
+- this is  a lightweight and fast stack which is build for less complexity between switching stacks while in a executing a big project 
+
+-MONGODB:
+
+- MongoDB it's a document based server side data base which mainly operates via json text inside the db's 
+- Mongo is easy to use not complex like other relational db's 
+
+-EXPRESS:
+- Express is made on top of node.js to help node.js with faster lookups.
+- Express is  a webapplication framework which is used with node.js while building a backend for the projects
+- It is Ligtning fast with already made inbuild plugins which are really helpful to save time writing methods for everything 
+
+-REACT:
+-React is a client side framework which also uses js as it's core language
+- React is a framework which sololy handles the whole frontend of the project with micro responsibilities
+- React's code can be used for server side of the project with client side of the project 
+- React generates templates that leave dev's time for other important tasks which they can focus on 
+
+
+----------------BENEFITS OF MERN -----------------------------
+
+- No need of context switching between project like with other programming languages or TECH STACKS 
+- NO need to worry about learning heavy backend languages with complex frameworks like java spring cobol , they just need to know js and json to work with MERN 
+
+
+
+
+
+===========================ES6 FEATURES ============================
+
+- LET CONST VAR
+- objects 
+-extends parent
+- constructor
+- prototypes
+- MAP, FILTER, REDUCE
+- super , object destructuring 
+- ... spread operator
+- object literals (` `)
+
