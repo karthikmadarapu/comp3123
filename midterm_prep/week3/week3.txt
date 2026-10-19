@@ -1,0 +1,36 @@
+Topics to Review:
+- Node.js
+- Introduction & installation
+- Node package manager (NPM)
+- Versioning and package.json
+- Core Node API
+- Global Object
+- Modules, Export, Require
+- Intro to Events and Event Emitter
+
+
+
+
+NODE.JS
+- Node.js is a server side runtime environment and it is open source.
+- Node.js has npm (Node package manager).
+- NPM can be used to download the modules npm install "..."
+- Versioning ! Major-Minor-Patch.
+- Major when made incompatible api changes are made.
+- You UP Minor changes  when you add fucntionality in backward compatible manner.
+- You Up the patch version when u make backward compatible bug fixes.
+
+
+Modules in Node.js
+- Require for importing.
+- module.Exports() for exporting the methods or functions.
+
+Node.js fs module and http modules
+- fs module filesystem.
+- http module is used to create a server and give back the response too.
+
+What's an API ?
+- Application programming interface (API), it's main funcitonality is to let software applications talk to each other via API.
+
+
+
