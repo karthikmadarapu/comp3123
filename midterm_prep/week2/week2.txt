@@ -45,7 +45,7 @@ class Animal {
 
 
 - Let's say we can use 
-  two types in fucntion expression 
+  two types in function expression 
 
 - Named expression 
 
@@ -75,7 +75,7 @@ console.log(rectangle.name);//outputs rectangle.
 - What's the difference between single and multi-threaded
 - JS is a single threaded running language while other programming languages like .net or java are heavily multi-threaded.
 - single threaded means it can only run certain tasks one at a time 
-- multi threaded means it can work while doing multiple tasks.
+- multi threaded means it can work while doing multiple tasks in the background.
 
 === A function passed inside an another function is called callback function===
 
