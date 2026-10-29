@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');    // This is where you create a schema in your db
 
 const NoteSchema = new mongoose.Schema({
     noteTitle: {
@@ -12,14 +12,14 @@ const NoteSchema = new mongoose.Schema({
     priority: {
         type: String,
         enum: ['HIGH', 'LOW', 'MEDIUM'],
-        default: 'LOW'
+        default: 'LOW'   // default if user enters nothing it get's back to default
     },
     dateAdded: {
         type: Date,
-        default: Date.now
+        default: Date.now  // .now is a live function where it navigates to Date.now Api
     },
     dateUpdated: {
-        type: Date,
+        type: Date,          //
         default: Date.now
     }
 });
