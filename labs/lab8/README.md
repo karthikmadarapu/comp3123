@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+COMP 3123 – Full Stack Development I
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Lab Week 10: React JS Data Entry Form
 
-## Available Scripts
+📋 Overview
 
-In the project directory, you can run:
+This project is a React JS web application developed as part of Lab Week 10 for COMP 3123. The application demonstrates dynamic form handling, component state management using React Hooks, and reactive UI rendering based on user interaction.
 
-### `npm start`
+The exercise is split into two core sections:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Part I: Data Entry Form — A structured form that collects user input including Email, Full Name, Address, City, Canadian Province selection, Postal Code, and Terms Agreement.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Part II: Submission Output Display — Dynamically renders and displays the submitted form information at the bottom of the page upon form submission.
 
-### `npm test`
+🛠️ Tools & Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Node.js (Runtime Environment)
 
-### `npm run build`
+NPM (Node Package Manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React.js (Frontend JavaScript Library)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+HTML5 / CSS3 (Form Structure & In-line Styling)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Git / GitHub (Version Control System)
 
-### `npm run eject`
+🚀 Getting Started & Execution Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure Node.js and NPM are installed on your system. Verification command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+node --version
+npm --version
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+1. Clone & Setup Repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository to your local machine:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd labweek10
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install Dependencies
 
-### Analyzing the Bundle Size
+Install all required Node dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Run the Development Server
 
-### Advanced Configuration
+Launch the React application in development mode:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm start
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The app will automatically open and run at http://localhost:3000 in your browser.
 
-### `npm run build` fails to minify
+📁 Project Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+labweek10/
+├── node_modules/         # Dependencies (Excluded before zipping)
+├── public/
+│   ├── index.html        # Main HTML file template
+│   └── favicon.ico
+├── src/
+│   ├── App.js            # Main React component containing Form logic & State
+│   ├── App.css           # Styling rules
+│   ├── index.js          # Entry point for React DOM rendering
+│   └── index.css
+├── .gitignore            # Git exclusion settings
+├── package.json          # Project metadata and dependencies script
+└── README.md             # Lab documentation
+
+
+📝 Form Submission Format (Part II Output)
+
+Upon filling in the inputs and pressing the Submit button, the app captures the live state and displays formatted output below the form:
+
+Submission Details:
+------------------------------------------
+Email:       | user@georgebrown.ca
+Full Name:   | Student Name
+Address:     | 160 Kendal Ave
+City:        | Toronto
+Province:    | Ontario
+Postal Code: | M5R 1M3
+------------------------------------------
+
+
+📦 Submission Checklist (For Instructor Review)
+
+[x] Node environment verified (node --version)
+
+[x] Application bootstrapped using npx create-react-app labweek10
+
+[x] GitHub repository created and updated (labweek10)
+
+[x] Part I: Full form fields and dropdown implemented
+
+[x] Part II: Form data rendered on submit action
+
+[x] node_modules folder removed before archiving
+
+[x] Project packaged into labweek10.zip
+
+Developed for COMP 3123 – Full Stack Development I.
